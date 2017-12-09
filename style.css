@@ -9,26 +9,26 @@ body{
 
 
 .site-logo {
-  position: absolute;
-  left: 40px;
-  top: 8px;
+  float: left;
   font-size: 32px;
 }
 
 .meny {
   width: 100%;
   position: fixed;
-  height: 40px;
   top: 0;
   font-weight: 700;
   background-color: #fff;
+  z-index: 9999;
+
+  padding-top:20px;
+  padding-right: 40px;
+  padding-bottom:0;
+  padding-left: 40px;
 }
 
 .nav {
-  position: absolute;
-  right: 40px;
-  top: 18px;
-  font-weight: 700;
+  float: right;
 }
 
 .nav > li {
@@ -45,9 +45,15 @@ body{
   color: #E95231;
 }
 
+ul {
+  line-height: unset;
+}
+
 
 a{
   color: black;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 a:hover{
@@ -72,11 +78,23 @@ a:hover{
 */
 
 
+.background-image {
+  background:url('Adam-9år.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+
+}
+
 h1{
   color: #E95231;
   text-align: center;
-  font-size: 28px;
-  margin-top: 400px;
+  font-size: 40px;
+  padding-top: 400px;
   margin-bottom: 0px;
   font-weight: 700;
 
@@ -102,6 +120,16 @@ h1{
 
 #work {
   margin-top: 1000px;
+
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+span {
+  padding:0;
+  margin: 0;
 }
 
 @keyframes fadeIn {
